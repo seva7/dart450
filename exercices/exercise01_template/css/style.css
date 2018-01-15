@@ -1,10 +1,28 @@
 /*
 
-Title of project
-Author's name
+Excercise 1
+Sévan Belleau
 
 Some description of the CSS styling
 
 */
 
 /* Actual CSS goes below here! */
+body {
+background: url(https://78.media.tumblr.com/aa54f4c6e53428fe338f9dc134ebe449/tumblr_p1ukoxxKZo1s5n09fo1_1280.jpg);
+
+}
+p {
+font-family: helvetica, sans-serif;
+font-size: 42px;
+}
+.name {
+color: #ffffff;
+padding-left: 140px;
+padding-top: 130px;
+}
+.name2 {
+color: #ffffff;
+padding-left: 700px;
+padding-top: 130px;
+}
