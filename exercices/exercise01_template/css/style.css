@@ -8,21 +8,41 @@ Some description of the CSS styling
 */
 
 /* Actual CSS goes below here! */
-body {
-background: url(https://78.media.tumblr.com/aa54f4c6e53428fe338f9dc134ebe449/tumblr_p1ukoxxKZo1s5n09fo1_1280.jpg);
-
-}
 p {
 font-family: helvetica, sans-serif;
 font-size: 42px;
 }
 .name {
 color: #ffffff;
-padding-left: 140px;
-padding-top: 130px;
+align-content: center;
+padding-top: 0px;
 }
 .name2 {
 color: #ffffff;
-padding-left: 700px;
-padding-top: 130px;
+font-size: 11px;
+align-content: center;
+
+padding-top: 10px;
+}
+body {
+  background: url(https://78.media.tumblr.com/aa54f4c6e53428fe338f9dc134ebe449/tumblr_p1ukoxxKZo1s5n09fo1_1280.jpg);
+
+  width: 600px; height: 600px;margin: 100px auto;text-align: center}
+div {margin: 0 auto}
+
+img {
+    /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+      filter: gray; /* IE5+ */
+      -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+      -webkit-transition: all .8s ease-in-out;
+    }
+
+    img:hover {
+    filter: none;
+      -webkit-filter: grayscale(0);
+      -webkit-transform: scale(1.01);
+    }
+    img.resize {
+  max-width:50%;
+  max-height:50%;
 }
