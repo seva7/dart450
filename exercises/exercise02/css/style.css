@@ -1,0 +1,20 @@
+/*
+
+DART 450, Winter 2018
+Line work
+Sévan Belleau
+
+Some description of the CSS styling
+
+*/
+
+
+#wrapper {
+  /* width: 10%; */
+}
+
+img {
+  position: absolute;
+  width: auto;
+  height: auto;
+}
