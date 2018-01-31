@@ -14,7 +14,12 @@ body {
 
 #start {
   position: absolute;
-  left: 200px;
+  left: 400px;
+}
+#second {
+  position: absolute;
+  left: 30px;
+  top: 400px;
 }
 
 .storyLine {
