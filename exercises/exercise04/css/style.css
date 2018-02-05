@@ -9,6 +9,8 @@ Some description of the CSS styling
 */
 
 body {
+  background-color: orange;
+  margin: 0 auto;
 
 }
 /* div {
@@ -33,13 +35,60 @@ top: 10px;
 left:10px;
 height: auto;
 width: 300px;
+
 }
 
 .him {
 position: absolute;
-top: 500px;
-left: 1200px;
-height: auto;
+bottom: 0;
+right: 0;
+margin-right: 20px;
+margin-bottom: 20px;
+height: 220px;
 width: 200px;
 
+background: url("../scans/him.png") no-repeat;
+background-size: contain;
+}
+
+@media all and (max-width: 1300px){
+  .him{
+    background: url("../scans/him2.png") no-repeat;
+    background-size: contain;
+  }
+}
+
+@media all and (max-width: 1000px){
+  .him{
+    background: url("../scans/him3.png") no-repeat;
+    background-size: contain;
+  }
+}
+
+@media all and (max-width: 800px){
+  .him{
+    background: url("../scans/him4.png") no-repeat;
+    background-size: contain;
+  }
+}
+
+@media all and (max-width: 600px){
+  .him{
+    background: url("../scans/him5.png") no-repeat;
+    background-size: contain;
+  }
+}
+
+@media all and (max-width: 600px){
+  .him{
+    background: url("../scans/him6.png") no-repeat;
+    background-size: contain;
+  }
+}
+
+@media all and (max-width: 400px){
+  .him{
+    background: url("../scans/kimk.jpg") no-repeat;
+    background-size: contain;
+  }
 }
