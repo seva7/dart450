@@ -9,5 +9,37 @@ Some description of the CSS styling
 */
 
 body {
-  
+
+}
+/* div {
+position: absolute;
+width: auto;
+height: auto;
+
+} */
+
+.one {
+position: absolute;
+top: 200px;
+left: 500px;
+height: auto;
+width: 500px;
+
+}
+
+.door {
+position: absolute;
+top: 10px;
+left:10px;
+height: auto;
+width: 300px;
+}
+
+.him {
+position: absolute;
+top: 500px;
+left: 1200px;
+height: auto;
+width: 200px;
+
 }
