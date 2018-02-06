@@ -19,6 +19,22 @@ width: auto;
 height: auto;
 
 } */
+div {
+font-style: italic;
+font-weight: bold;
+font-size: 24px;
+image width: auto;
+image height: 50px;
+
+}
+
+.yay {
+width: auto;
+height: 50px;
+position: absolute;
+top: 10px;
+left: 180px;
+}
 
 .one {
 position: absolute;
@@ -36,6 +52,12 @@ left:10px;
 height: auto;
 width: 300px;
 
+}
+
+.nope {
+  position: absolute;
+  top: 250px;
+  left: 60px;
 }
 
 .him {
@@ -58,28 +80,28 @@ background-size: contain;
   }
 }
 
-@media all and (max-width: 1000px){
+@media all and (max-width: 1100px){
   .him{
     background: url("../scans/him3.png") no-repeat;
     background-size: contain;
   }
 }
 
-@media all and (max-width: 800px){
+@media all and (max-width: 900px){
   .him{
     background: url("../scans/him4.png") no-repeat;
     background-size: contain;
   }
 }
 
-@media all and (max-width: 600px){
+@media all and (max-width: 700px){
   .him{
     background: url("../scans/him5.png") no-repeat;
     background-size: contain;
   }
 }
 
-@media all and (max-width: 600px){
+@media all and (max-width: 500px){
   .him{
     background: url("../scans/him6.png") no-repeat;
     background-size: contain;
