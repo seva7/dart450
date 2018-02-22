@@ -1,0 +1,68 @@
+/*
+
+DART 450, Winter 2018
+Title of project
+Author
+
+Some description of the CSS styling
+
+*/
+
+body {
+user-select: none;
+}
+
+.hiddenPixel {
+  position: absolute;
+
+  width: 2px;
+  height: 2px;
+  background-color: black;
+  opacity: .7;
+  z-index: 100;
+}
+
+#one {
+  position: absolute;
+  top: 300px;
+  left:700px;
+}
+
+#title {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  font-size: 42px;
+  font-family: helvetica;
+  font-weight: bold;
+
+}
+#frame1 {
+  position: absolute;
+  height: auto;
+  width: 300px;
+  top: 10%;
+  left: 10%;
+}
+
+#kuru1 {
+  position: absolute;
+  height: auto;
+  width: 300px;
+  top: 50%;
+  left: 63%;
+}
+#sofa1 {
+  position: absolute;
+  height: auto;
+  width: 300px;
+  top: 55%;
+  left: 26%;
+}
+#draw1 {
+  position: absolute;
+  height: auto;
+  width: 300px;
+  top: 5%;
+  left: 75%;
+}
