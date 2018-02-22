@@ -27,6 +27,10 @@ var colours = [ '#f4f142','#f9f786','#f9ce85','#ffaa1c',
 '#C5D5E4','#EFBDEB','#B68CB8','#6461A0',
 '#314CB6','#0A81D1','#6BA292','#35CE8D',]
 
+// to be set for each series
+var nextFrameImageNumber = 1
+// This is the amount of pictures to be shown
+var numFrameImages = 3
 
 
 $(document).ready(function () {
@@ -37,34 +41,67 @@ $link.addClass('hiddenPixel');
 var x = Math.random() * ($(window).width() - $link.width());
 var y = Math.random() * ($(window).height() - $link.height());
 $link.css({
-  top: y,
-  left: x,
+top: y,
+left: x,
 })
 $('body').append($link);
 
 
-  $('#second').hide()
+$('#second').hide()
 
-  // Insert jQuery code here to run when the page is loaded
+// Insert jQuery code here to run when the page is loaded
 $('#button').click(function(){
 // This code is to remove imput and replace it with .val('ok')
-  var inputString = $('#input').val();
+var inputString = $('#input').val();
 // removes imput to be nice to people
-  $('#input').val('ok')
+$('#input').val('ok')
 
-  $('#one').fadeOut(2000);
-  setTimeout(function() {
-     $('#second').fadeIn(2000);
-   },2000);
-
-  var letterSum = inputString.charCodeAt(0)+inputString.charCodeAt(1)+inputString.charCodeAt(2);
-  var colourIndex = letterSum % colours.length;
-
- $('body').css({
-   //    (colours)this is the array ([colourIndex] a number the first and last of the array to be taken at that place)
-   backgroundColor: colours[colourIndex]
+$('#one').fadeOut(2000);
+setTimeout(function() {
+   $('#second').fadeIn(2000);
+ },2000);
 
 
-    })
+var letterSum = inputString.charCodeAt(0)+inputString.charCodeAt(1)+inputString.charCodeAt(2);
+var colourIndex = letterSum % colours.length;
+
+$('body').css({
+ //    (colours)this is the array ([colourIndex] a number the first and last of the array to be taken at that place)
+ backgroundColor: colours[colourIndex]
+ // the }) underneath marks the end of $('body')
   })
+  // The })underneath marks the end of $('button.click(function())')
+})
+
+
+$('#frame1').on('click',addNextFrameImage)
+// $('.frame').draggable({containment: 'window'})
+
+
+
+// The }) underneath marks the end of $(document).ready(function () {
 });
+
+// FUNCTION OF ADDING THE NEXT IMAGE
+function addNextFrameImage(){
+  var $image = $('<img>');
+
+  $image.on('click',addNextFrameImage);
+  $image.attr({
+    class: "frame",
+    src: "pics/Frame"+ (nextFrameImageNumber) +".jpg"
+  });
+
+  var x = Math.floor(20 - Math.random() * 40);
+  var y = Math.floor(20 - Math.random() * 40);
+  $image.css({
+    top: y + 'px',
+    left: x + 'px',
+  });
+  $('#frames').append($image);
+  $image.draggable({containment: 'window'});
+  // console.log("Added image " + nextImageNumber);
+  nextFrameImageNumber = (nextFrameImageNumber+1) % numFrameImages;
+  // console.log("Next image is " + nextImageNumber);
+}
+// END OF FUNCTION ADDING THE NEXT IMAGE
