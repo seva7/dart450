@@ -57,3 +57,32 @@ $('#button').click(function(){
 //   var firstLetter = Math.floor((inputString.charCodeAt(0)/127)*255);
 //   var secondLetter = Math.floor((inputString.charCodeAt(1)/127)*255);
 //   var thirdLetter = Math.floor((inputString.charCodeAt(2)/127)*255);
+
+
+
+ OTHER STUFF
+$(document).ready(function () {
+
+  // Insert jQuery code here to run when the page is loaded
+
+  $(document).ready(function () {
+    $(document).on('click',function () {
+      addRedSquare();
+    });
+  });
+  function addRedSquare() {
+    var $square = $('<div></div>');
+    var x = Math.floor(Math.random() * $(window).width());
+    var y = Math.floor(Math.random() * $(window).height());
+    $square.css({
+      position: 'absolute',
+      top: y + 'px',
+      left: x + 'px',
+      width: '100px',
+      height: '100px',
+      backgroundColor: 'red'
+    });
+    $('body').append($square);
+  }
+
+});
