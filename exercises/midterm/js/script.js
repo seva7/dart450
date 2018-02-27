@@ -336,7 +336,7 @@ function addNextSofaImage(){
   $imageSofa.on('click',addNextSofaImage);
   $imageSofa.attr({
     class: "sofa",
-    src: "pics/Sofa"+ (nextSofaImageNumber) +".jpg"
+    src: "pics/sofa"+ (nextSofaImageNumber) +".jpg"
   });
 
   var xB = Math.floor(20 - Math.random() * 40);
@@ -369,7 +369,7 @@ function addNextTableImage(){
   $imageTable.on('click',addNextTableImage);
   $imageTable.attr({
     class: "table",
-    src: "pics/Table"+ (nextTableImageNumber) +".jpg"
+    src: "pics/table"+ (nextTableImageNumber) +".jpg"
   });
 
   var xB = Math.floor(20 - Math.random() * 40);
