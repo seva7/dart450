@@ -72,7 +72,7 @@ var nextTableImageNumber = 1
 // This is the amount of pictures to be shown
 var numTableImages = 3
 
-
+console.log(colours)
 $(document).ready(function () {
 
 // function info () {
