@@ -1,0 +1,57 @@
+/*
+
+DART 450, Winter 2018
+Line work
+Sévan Belleau
+
+Some description of the CSS styling
+
+*/
+
+
+#wrapper {
+  /* width: 10%; */
+}
+
+#submit {
+  position: absolute;
+
+  font-size: 42px;
+  font-family: 'helvetica';
+  font-weight: bold;
+  z-index: 6
+
+}
+#email {
+  position: absolute;
+
+  font-size: 42px;
+  font-family: 'helvetica';
+  font-weight: bold;
+  z-index: 2;
+
+}
+
+.manifesto{
+  font-size: 18px;
+  font-family: 'helvetica';
+  color: blue;
+  position: absolute;
+  top: 280px;
+  left:600px;
+  /* top: 50%;
+  left:50%; */
+  width: 300px;
+}
+.email{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+
+}
+img {
+  position: absolute;
+  width: auto;
+  height: auto;
+}

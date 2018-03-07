@@ -11,3 +11,8 @@ Some description of the CSS styling
 body {
 
 }
+.large{
+  font-size: 30px;
+  font-family: 'Helvetica';
+
+}

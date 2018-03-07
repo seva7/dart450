@@ -9,55 +9,82 @@ Description of what the script does...
 **********************************************/
 
 
-var feelingSum = 3;
-var currentFeeling = 0;
-var feelings = ['art','a tool','the future'];
-var feelingsIndex = feelings[boop];
-var boop = (Math.floor(Math.random() *feelingSum)) % feelings.length;
-var newFeeling = currentFeeling + 1
-// var text = "submit if you see design as " + (boop);
-
-  var text= 'submit if you see design as' + (newFeeling)
-
 $(document).ready(function () {
 
-  setInterval(function(){
+
+var i= 0;
+var updateInterval = 3000;
+var feelingName =
+['art','a tool','a way of living','a solution for our future','a method of creation','a meme']
+
+var feelings = feelingName[i]
+var firstTime = true;
 
 
-  var feelingSum = 3;
-  var currentFeeling = 0;
-  var feelings = ['art','a tool','the future'];
-  var feelingsIndex = feelings[boop];
-  var boop = (Math.floor(Math.random() *feelingSum)) % feelings.length;
-  var currentFeeling = currentFeeling + 1;
+function changingFeelings () {
+if( i===0 && firstTime=== true){
+var newDiv = $('<div id="firstDiv" ></div>');
+newDiv.html('design as '+(feelingName[i]))
+i = i+1;
 
- text= 'submit if you see design as' + (currentFeeling)
-console.log(currentFeeling)
-},1000)
+newDiv.css({
+color :'blue'
+})
+
+$('body').append(newDiv);
+firstTime = false;
+}
+else{
+$("#firstDiv").html('design as '+(feelingName[i]));
+i = i+1;
+}
+if (i === feelingName.length ){
+ i = 0;
+}
+}
+
+setInterval (changingFeelings,2000);
+
+
+});
+
+
+//   setInterval(function(){
+//   // $('.counterDiv').on('click',function(){
+//     counter = counter + 1;
+//     $('#counter').text(feelings);
+//     feelings = feelingName[counter];
+//   // })
+//   },updateInterval);
+// });
+// // });
+// function update (){
+//   counter = counter + 1;
+//   $('#counter').text(feelings);
+//   feelings = feelingName[counter];
+// }
+//
+// setInterval(function(){
+// console.log("submit if you see art as",feelingName[counter])
+// },3000)
+
+
 // feelingsIndex = feelings[boop];
 // boop = (Math.floor(Math.random() *feelingSum)) % feelings.length;
-
-  // Insert jQuery code here to run when the page is loaded
-  // setInterval(function() {
-  //   feelingSum = 3;
-  //   feelings = ['art','a tool','the future'];
-  //   feelingsIndex = feelings[boop];
-  //   boop = (Math.floor(Math.random() *feelingSum)) % feelings.length;
-
-
-    // var text = "submit if you see design as " + (boop);
-    // $('body').append(text)
-    // console.log(boop)
-  // },1000);
-
-
-$('body').append(text)
+// // Insert jQuery code here to run when the page is loaded
+//   setInterval(function() {
+//     feelingSum = 3;
+//     feelings = ['art','a tool','the future'];
+//     feelingsIndex = feelings[boop];
+//     boop = (Math.floor(Math.random() *feelingSum)) % feelings.length;
+//     var text = "submit if you see design as " + (boop);
+//     $('body').append(text)
+//     console.log(boop)
+//   },1000);
+// $('body').append(text)
+// });
 
  // setInterval(function(){
  //
  //
  // })
-
-
-
-});
