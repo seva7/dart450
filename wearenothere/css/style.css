@@ -39,6 +39,8 @@ Some description of the CSS styling
   position: absolute;
   top: 280px;
   left:600px;
+  /* top: 50%;
+  left:50%; */
   width: 300px;
 }
 .email{

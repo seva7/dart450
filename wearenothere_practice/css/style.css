@@ -29,7 +29,7 @@ Some description of the CSS styling
   font-family: 'helvetica';
   font-weight: bold;
   z-index: 2;
-
+  word-wrap: break-word;
 }
 
 .manifesto{
