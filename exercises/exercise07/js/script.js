@@ -1,7 +1,6 @@
 /*
 
-Blast.js template
-Pippin Barr
+exercise07
 
 
 */
