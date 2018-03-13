@@ -1,0 +1,38 @@
+/*
+
+DART 450, Winter 2018
+Draggable
+Pippin Barr
+
+*/
+
+body {
+  user-select: none;
+}
+
+.word {
+  cursor: pointer;
+  font-style: 'cursive';
+  font-size: 1em;
+  font-weight: italic;
+  padding: 4px;
+  background-color: yellow;
+}
+
+.head {
+position: absolute;
+top: 50px;
+left: 450px;
+height: 600px;
+width: auto;
+}
+
+.thoughts {
+  position: absolute;
+  top: 8px;
+  left:700px;
+  font-size: 25px;
+  font-style: italic;
+  font-family: 'cursive';
+  background-color: yellow;
+}
