@@ -5,7 +5,15 @@ DART 450
 **********************************************/
 
 
+var voice = 'UK English Male';
+var voiceParameters = {
+  pitch: 2.5,
+  rate: 1,
+  volume: 1
+}
+
 $(document).ready(function () {
+
 
 
   $('#words').blast({
@@ -20,6 +28,12 @@ $(document).ready(function () {
     $(this).draggable();
 
 });
+
+$('.blast').mouseover(function () {
+    // When a word is moused over, use responsive voice to speak
+    // its text (e.g. the word itself)
+    responsiveVoice.speak($(this).text(),voice,voiceParameters);
+  });
 // $(this).speak();
 
 // <input onclick='responsiveVoice.speak("Hello World");' type='button' value='🔊 Play' />
@@ -28,11 +42,11 @@ $(document).ready(function () {
   // // Basic dragging
   // $('#words').draggable();
 
-  var player = GetPlayer();
-  var textToSpeech = player.GetVar("textToSpeech");
-  responsiveVoice.speak(textToSpeech);
-
-
+  // var player = GetPlayer();
+  // var textToSpeech = player.GetVar("textToSpeech");
+  // responsiveVoice.speak(textToSpeech);
+  //
+  //
 
 
 
