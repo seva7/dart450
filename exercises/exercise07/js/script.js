@@ -34,25 +34,14 @@ $('.blast').mouseover(function () {
     // its text (e.g. the word itself)
     responsiveVoice.speak($(this).text(),voice,voiceParameters);
   });
-// $(this).speak();
-
-// <input onclick='responsiveVoice.speak("Hello World");' type='button' value='🔊 Play' />
+});
 
 
-  // // Basic dragging
-  // $('#words').draggable();
-
-  // var player = GetPlayer();
-  // var textToSpeech = player.GetVar("textToSpeech");
-  // responsiveVoice.speak(textToSpeech);
-  //
-  //
-
-
-
-
-
-
+// $('.blast').mouseover(function () {
+//     // When a word is moused over, use responsive voice to speak
+//     // its text (e.g. the word itself)
+//     responsiveVoice.speak($(this).text(),voice,voiceParameters);
+//   });
 
   // Constrain the dragging to a container
   // $('img').draggable({
@@ -70,7 +59,6 @@ $('.blast').mouseover(function () {
   //   stop: dragFinished
   // });
 
-});
 
 // // dragStarted
 // function dragStarted(ui) {
