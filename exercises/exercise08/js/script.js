@@ -17,6 +17,11 @@ var controller;
 
 $(document).ready(function() {
 
+    // We use Tubular to play our beach movie. Nothing fancy.
+    // $('#wrapper').tubular({
+    //   videoId: 'nfdEdE96En0'
+    // });
+
   // Create a controller for ScrollMagic
   // (Have to do this whenever you start using it)
   controller = new ScrollMagic.Controller();
@@ -74,25 +79,25 @@ function handleScrollUpdate() {
   // direction: greenish for FORWARD, pinkish for REVERSE
   if (dir == "FORWARD") {
     $('body').css({
-      backgroundColor: "rgb(100,200,100)"
+      // backgroundColor: "rgb(100,200,100)"
     });
   }
   else if (dir == "REVERSE") {
     $('body').css({
-      backgroundColor: "rgb(200,100,100)"
+      // backgroundColor: "rgb(200,100,100)"
     });
   }
 }
 
 function handleTriggerEnter() {
   $('#trigger').css({
-    backgroundColor: "rgb(40,200,40)"
+    // backgroundColor: "rgb(40,200,40)"
   });
 }
 
 function handleTriggerLeave() {
   $('#trigger').css({
-    backgroundColor: "rgb(200,40,40)"
+    // backgroundColor: "rgb(200,40,40)"
   })
 }
 

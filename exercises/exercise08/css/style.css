@@ -7,18 +7,68 @@ Basic styling of our progress text and our trigger div
 
 */
 
-#progress {
-  position: fixed;
+ #progress {
+   position: fixed;
   font-family: sans-serif;
   font-size: 20em;
   font-weight: bolder;
 }
 
 #trigger {
-  height: 500px;
+  position: fixed;
+  height: 100px;
   width: 100%;
-  margin: 0;
-  margin-top: 10%;
-  margin-bottom: 100%;
+  top: 100px;
+  /* margin: 0; */
+  /* margin-top: 10%; */
+  /* margin-bottom: 100%; */
   background-color: lightgrey;
 }
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+
+}
+
+/* #wrapper {
+	margin: 0 auto;
+	padding: 0px;
+	height: 100%;
+	overflow: hidden;
+} */
+
+/* #content {
+	height: 100%;
+} */
+
+
+/* .flasher {
+	animation: flasher 5s linear infinite;
+} */
+
+@keyframes flasher {
+	10% { color: rgb(255,0,0)}
+	20% { color: rgb(0,255,0)}
+	30% { color: rgb(0,0,255)}
+	40% { color: rgb(255,0,255)}
+	50% { color: rgb(0,255,255)}
+	60% { color: rgb(255,255,0)}
+	70% { color: rgb(0,127,255)}
+	80% { color: rgb(255,127,255)}
+	90% { color: rgb(255,0,127)}
+}
+
+.fader {
+	animation: fadeout 5s linear forwards;
+}
+/*
+@keyframes fadeout {
+	100% { opacity: 0.0 }
+} */

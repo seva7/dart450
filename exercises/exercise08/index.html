@@ -1,8 +1,8 @@
 <!-- ************************************************************************
 
-Creation of a hamburger as kuel theory plays.
+Creation of a hamburger as cuil theory plays.
 
-I will be using the scroll ScrollMagic plugin to bring images closer and closer to create a hamburger. 
+I will be using the scroll ScrollMagic plugin to bring images closer and closer to create a hamburger.
 
 ************************************************************************ -->
 
@@ -14,7 +14,7 @@ I will be using the scroll ScrollMagic plugin to bring images closer and closer 
 
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
-  <title>ScrollMagic with Events</title>
+  <title>Cuil Hamburger</title>
 
   <link rel="stylesheet" type="text/css" href="css/style.css" />
 
@@ -22,8 +22,9 @@ I will be using the scroll ScrollMagic plugin to bring images closer and closer 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
   <!-- Uncomment next two lines to include jQuery UI -->
-  <!-- <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"> -->
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> -->
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="js/jquery.tubular.1.0.js"></script>
 
   <!-- ScrollMagic -->
   <script src="js/ScrollMagic.min.js"></script>
@@ -34,6 +35,8 @@ I will be using the scroll ScrollMagic plugin to bring images closer and closer 
   <!-- We include our own script file(s) -->
   <script src="js/script.js" content="text/javascript"></script>
 
+
+
 </head>
 
 <!-- Comment about the body of the HTML -->
@@ -42,6 +45,13 @@ I will be using the scroll ScrollMagic plugin to bring images closer and closer 
 
   <div id="progress">0%</div>
   <div class="block" id="trigger"></div>
+
+  <div style="position: absolute; z-index: -99; width: 100%; height: 100%">
+    <iframe frameborder="0" height="100%" width="100%"
+      src="https://youtube.com/embed/nfdEdE96En0?autoplay=1&controls=0&showinfo=0&autohide=1">
+    </iframe>
+
+
 
 </body>
 
