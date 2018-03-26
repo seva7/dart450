@@ -1,13 +1,24 @@
 /*
 
-DART 450, Winter 2018
-Title of project
-Author
+ScrollMagic with Events
+Pippin Barr
 
-Some description of the CSS styling
+Basic styling of our progress text and our trigger div
 
 */
 
-body {
-  
+#progress {
+  position: fixed;
+  font-family: sans-serif;
+  font-size: 20em;
+  font-weight: bolder;
+}
+
+#trigger {
+  height: 500px;
+  width: 100%;
+  margin: 0;
+  margin-top: 10%;
+  margin-bottom: 100%;
+  background-color: lightgrey;
 }

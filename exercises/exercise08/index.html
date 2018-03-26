@@ -1,10 +1,8 @@
 <!-- ************************************************************************
 
-DART 450, Winter 2018
-Title of project
-Author
+Creation of a hamburger as kuel theory plays.
 
-Description of project and purpose of HTML...
+I will be using the scroll ScrollMagic plugin to bring images closer and closer to create a hamburger. 
 
 ************************************************************************ -->
 
@@ -16,19 +14,25 @@ Description of project and purpose of HTML...
 
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
-  <title>Title of project</title>
+  <title>ScrollMagic with Events</title>
 
   <link rel="stylesheet" type="text/css" href="css/style.css" />
 
-  <!-- Include jQuery via the CDN -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Including jQuery by default -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-  <!-- Uncomment the lines below to include jQuery UI -->
+  <!-- Uncomment next two lines to include jQuery UI -->
   <!-- <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"> -->
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> -->
 
-  <!-- Include the script file -->
-  <script src="js/script.js"></script>
+  <!-- ScrollMagic -->
+  <script src="js/ScrollMagic.min.js"></script>
+
+  <!-- ScrollMagic Debugging plugin -->
+  <script src="js/plugins/debug.addIndicators.min.js"></script>
+
+  <!-- We include our own script file(s) -->
+  <script src="js/script.js" content="text/javascript"></script>
 
 </head>
 
@@ -36,7 +40,8 @@ Description of project and purpose of HTML...
 
 <body>
 
-  <!-- HTML specifying the webpage goes here -->
+  <div id="progress">0%</div>
+  <div class="block" id="trigger"></div>
 
 </body>
 
