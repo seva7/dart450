@@ -36,7 +36,7 @@ $(document).ready(function() {
   // Add debugging indicators
   // (To use this you need to include the plugins/debug.addIndicators.min.js file
   // in your index.html)
-  topBunScene.addIndicators();
+  // topBunScene.addIndicators();
   // Add to the controller to it works
   topBunScene.addTo(controller);
 
@@ -46,7 +46,7 @@ $(document).ready(function() {
   })
     .setPin(".lettuce")
   lettuceScene.triggerHook(0.305);
-  lettuceScene.addIndicators();
+  // lettuceScene.addIndicators();
   lettuceScene.addTo(controller);
 
   var tomatoesScene = new ScrollMagic.Scene({
@@ -54,7 +54,7 @@ $(document).ready(function() {
   })
     .setPin(".tomatoes")
   tomatoesScene.triggerHook(0.37);
-  tomatoesScene.addIndicators();
+  // tomatoesScene.addIndicators();
   tomatoesScene.addTo(controller);
 
   var baconScene = new ScrollMagic.Scene({
@@ -62,7 +62,7 @@ $(document).ready(function() {
   })
     .setPin(".bacon")
   baconScene.triggerHook(0.41);
-  baconScene.addIndicators();
+  // baconScene.addIndicators();
   baconScene.addTo(controller);
 
   var cheeseScene = new ScrollMagic.Scene({
@@ -70,7 +70,7 @@ $(document).ready(function() {
   })
     .setPin(".cheese")
   cheeseScene.triggerHook(0.42);
-  cheeseScene.addIndicators();
+  // cheeseScene.addIndicators();
   cheeseScene.addTo(controller);
 
   var meatScene = new ScrollMagic.Scene({
@@ -78,7 +78,7 @@ $(document).ready(function() {
   })
     .setPin(".meat")
   meatScene.triggerHook(0.47);
-  meatScene.addIndicators();
+  // meatScene.addIndicators();
   meatScene.addTo(controller);
 
   var bottomBunScene = new ScrollMagic.Scene({
@@ -86,7 +86,7 @@ $(document).ready(function() {
   })
     .setPin(".bottomBun")
   bottomBunScene.triggerHook(0.53);
-  bottomBunScene.addIndicators();
+  // bottomBunScene.addIndicators();
   bottomBunScene.addTo(controller);
 
 });
