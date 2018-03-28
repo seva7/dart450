@@ -1,74 +1,102 @@
+
 /*
+<img src="pics/7.png" class="topBun">
+<img src="pics/6.png" class="lettuce">
+<img src="pics/5.png" class="tomatoes">
+<img src="pics/4.png" class="bacon">
+<img src="pics/3.png" class="cheese">
+<img src="pics/2.png" class="meat">
+<img src="pics/1.png" class="bottomBun"> */
 
-ScrollMagic with Events
-Pippin Barr
-
-Basic styling of our progress text and our trigger div
-
-*/
-
- #progress {
-   position: fixed;
-  font-family: sans-serif;
-  font-size: 20em;
-  font-weight: bolder;
+.topBun {
+  position: absolute;
+  top: 1500px;
+  left: 39%;
+  height: auto;
+  width: 350px;
+  z-index: 7;
 }
 
-#trigger {
-  position: fixed;
-  height: 100px;
-  width: 100%;
+.lettuce {
+  position: absolute;
+  top: 2000px;
+  left: 41%;
+  height: auto;
+  width: 270px;
+  z-index: 6;
+}
+
+.tomatoes {
+  position: absolute;
+  top: 2500px;
+  left: 41%;
+  height: auto;
+  width: 300px;
+  z-index: 5;
+}
+
+.bacon {
+  position: absolute;
+  top: 3000px;
+  left: 41%;
+  height: auto;
+  width: 280px;
+  z-index: 4;
+}
+
+.cheese {
+  position: absolute;
+  top: 3500px;
+  left: 39%;
+  height: auto;
+  width: 370px;
+  z-index: 3;
+}
+
+.meat {
+  position: absolute;
+  top: 4000px;
+  left: 39%;
+  height: auto;
+  width: 350px;
+  z-index: 2;
+}
+
+.bottomBun {
+  position: absolute;
+  top: 4500px;
+  left: 37%;
+  height: auto;
+  width: 400px;
+  z-index: 1;
+}
+
+.smile {
+  position: absolute;
+  top: 5200px;
+  left: 50%;
+  margin-bottom: 70%;
+  font-size: 42px;
+  font-style: bold;
+  font-family: "helvetica";
+}
+
+.inside {
+  position: absolute;
+  margin-top: -70px;
+  left: 50%;
+  margin-bottom: 70%;
+  font-size: 20px;
+  font-style: bold;
+  font-family: "helvetica";
+}
+
+.order {
+  position: absolute;
   top: 100px;
-  /* margin: 0; */
-  /* margin-top: 10%; */
-  /* margin-bottom: 100%; */
-  background-color: lightgrey;
+  left: 36%;
+  width: 400px;
+  font-size: 28px;
+  font-style: bold;
+  font-family: "helvetica";
 }
-
-html {
-	width: 100%;
-	height: 100%;
-}
-
-body {
-	margin: 0;
-	padding: 0;
-	height: 100%;
-
-}
-
-/* #wrapper {
-	margin: 0 auto;
-	padding: 0px;
-	height: 100%;
-	overflow: hidden;
-} */
-
-/* #content {
-	height: 100%;
-} */
-
-
-/* .flasher {
-	animation: flasher 5s linear infinite;
-} */
-
-@keyframes flasher {
-	10% { color: rgb(255,0,0)}
-	20% { color: rgb(0,255,0)}
-	30% { color: rgb(0,0,255)}
-	40% { color: rgb(255,0,255)}
-	50% { color: rgb(0,255,255)}
-	60% { color: rgb(255,255,0)}
-	70% { color: rgb(0,127,255)}
-	80% { color: rgb(255,127,255)}
-	90% { color: rgb(255,0,127)}
-}
-
-.fader {
-	animation: fadeout 5s linear forwards;
-}
-/*
-@keyframes fadeout {
-	100% { opacity: 0.0 }
-} */

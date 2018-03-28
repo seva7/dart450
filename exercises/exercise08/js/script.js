@@ -17,11 +17,6 @@ var controller;
 
 $(document).ready(function() {
 
-    // We use Tubular to play our beach movie. Nothing fancy.
-    // $('#wrapper').tubular({
-    //   videoId: 'nfdEdE96En0'
-    // });
-
   // Create a controller for ScrollMagic
   // (Have to do this whenever you start using it)
   controller = new ScrollMagic.Controller();
@@ -30,92 +25,68 @@ $(document).ready(function() {
   // A 'scene' is used for all the events related to one trigger element.
   // The 'duration' is used to be able to check how _much_ of the element
   // we have scrolled through, which can be helpful. It is a duration in pixels.
-  var scene = new ScrollMagic.Scene({
-    triggerElement: "#trigger",
-    duration: $('#trigger').height()
+  var topBunScene = new ScrollMagic.Scene({
+    triggerElement: ".topBun",
   })
-
-  // Add an update handler (called whenever scrolling is happening)
-  scene.on("update", handleScrollUpdate);
-
-  // Add an enter handler (called whenever the trigger enters
-  // the #trigger div).
-  scene.on("enter", handleTriggerEnter);
-
-  // Add aa leave handler (called whenever the trigger leaves
-  // the #trigger div).
-  scene.on("leave", handleTriggerLeave);
-
-  // Add a progress handler (called whenever there is scrolling within
-  // the div, gives us the fraction of progress through the div)
-  scene.on("progress", handleTriggerProgress);
-
-  // Add a start handler (called when the trigger passes the top of the trigger)
-  scene.on("start", handleTriggerStart);
-
-  // Add an end handler (called when the trigger passes the bottom of the trigger)
-  scene.on("end", handleTriggerEnd);
+    .setPin(".topBun")
 
   // Put the trigger higher up on the scrollbar (the trigger hook is the location on
   // the page that triggers things)
-  scene.triggerHook(0.1);
-
+  topBunScene.triggerHook(0.3);
   // Add debugging indicators
   // (To use this you need to include the plugins/debug.addIndicators.min.js file
   // in your index.html)
-  scene.addIndicators();
-
+  topBunScene.addIndicators();
   // Add to the controller to it works
-  scene.addTo(controller);
+  topBunScene.addTo(controller);
+
+
+  var lettuceScene = new ScrollMagic.Scene({
+    triggerElement: ".lettuce",
+  })
+    .setPin(".lettuce")
+  lettuceScene.triggerHook(0.305);
+  lettuceScene.addIndicators();
+  lettuceScene.addTo(controller);
+
+  var tomatoesScene = new ScrollMagic.Scene({
+    triggerElement: ".tomatoes",
+  })
+    .setPin(".tomatoes")
+  tomatoesScene.triggerHook(0.37);
+  tomatoesScene.addIndicators();
+  tomatoesScene.addTo(controller);
+
+  var baconScene = new ScrollMagic.Scene({
+    triggerElement: ".bacon",
+  })
+    .setPin(".bacon")
+  baconScene.triggerHook(0.41);
+  baconScene.addIndicators();
+  baconScene.addTo(controller);
+
+  var cheeseScene = new ScrollMagic.Scene({
+    triggerElement: ".cheese",
+  })
+    .setPin(".cheese")
+  cheeseScene.triggerHook(0.42);
+  cheeseScene.addIndicators();
+  cheeseScene.addTo(controller);
+
+  var meatScene = new ScrollMagic.Scene({
+    triggerElement: ".meat",
+  })
+    .setPin(".meat")
+  meatScene.triggerHook(0.47);
+  meatScene.addIndicators();
+  meatScene.addTo(controller);
+
+  var bottomBunScene = new ScrollMagic.Scene({
+    triggerElement: ".bottomBun",
+  })
+    .setPin(".bottomBun")
+  bottomBunScene.triggerHook(0.53);
+  bottomBunScene.addIndicators();
+  bottomBunScene.addTo(controller);
 
 });
-
-
-function handleScrollUpdate() {
-  // Find out what direction is being scrolled in from the controller
-  var dir = controller.info("scrollDirection");
-
-  // Change the background color of the page based on the scroll
-  // direction: greenish for FORWARD, pinkish for REVERSE
-  if (dir == "FORWARD") {
-    $('body').css({
-      // backgroundColor: "rgb(100,200,100)"
-    });
-  }
-  else if (dir == "REVERSE") {
-    $('body').css({
-      // backgroundColor: "rgb(200,100,100)"
-    });
-  }
-}
-
-function handleTriggerEnter() {
-  $('#trigger').css({
-    // backgroundColor: "rgb(40,200,40)"
-  });
-}
-
-function handleTriggerLeave() {
-  $('#trigger').css({
-    // backgroundColor: "rgb(200,40,40)"
-  })
-}
-
-function handleTriggerProgress(e) {
-  // Display the progress on our page:
-  //
-  // e.progress contains the fraction of progress (e.g. 0.5 if we're halfway through)
-  // (e.progress * 100) gives the fraction as a percentage (with decimal point)
-  // Math.floor() to remove anything after the decimal point
-  // and we add the percentage sign at the end
-  var progressString = Math.floor(e.progress*100) + '%';
-  $('#progress').text(progressString);
-}
-
-function handleTriggerStart() {
-    console.log("Passed the top of the element!");
-}
-
-function handleTriggerEnd() {
-    console.log("Passed the bottom of the element!");
-}
