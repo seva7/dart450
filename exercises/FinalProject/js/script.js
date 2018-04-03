@@ -1,8 +1,8 @@
 /**********************************************
 
 DART 450, Winter 2018
-Title of Project
-Author
+BrutalBook
+Sévan Belleau
 
 Description of what the script does...
 
