@@ -24,10 +24,64 @@ width: 100vw;
 }
 
 .topBar {
+  position: fixed;
+  top: 0;
+  left: 0;
   background-color: #4468b0;
   height: 43px;
-  width: 100vw
+  width: 100vw;
+  z-index: 1;
 }
+
+.searchBar {
+  position: fixed;
+  height: auto;
+  width: 500px;
+  top: -5px;
+  left:45px;
+  z-index: 2;
+}
+
+.sideBar {
+  position: fixed;
+  height: auto;
+  width: 250px;
+  top: 40px;
+  left: 10px;
+}
+
+.makePost {
+  position: absolute;
+  height: auto;
+  width: 550px;
+  top: 50px;
+  left:250px;
+}
+
+.goodMorning {
+  position: absolute;
+  height: auto;
+  width: 550px;
+  top: 230px;
+  left:250px;
+}
+
+.audreyPost {
+  position: absolute;
+  height: auto;
+  width: 590px;
+  top: 335px;
+  left:235px;
+}
+
+.audreyPost2 {
+  position: absolute;
+  height: auto;
+  width: 590px;
+  top: 800px;
+  left:235px;
+}
+
 
 .topSideMenu {
   font-size: 16px;
