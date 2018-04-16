@@ -42,6 +42,15 @@ width: 100vw;
   z-index: 2;
 }
 
+.home {
+  position: fixed;
+  height: auto;
+  width: 350px;
+  top: -6px;
+  left:775px;
+  z-index: 2;
+}
+
 .sideBar {
   position: fixed;
   height: auto;
@@ -82,6 +91,21 @@ width: 100vw;
   left:235px;
 }
 
+.stories {
+  position: fixed;
+  height: auto;
+  width: 340px;
+  top: 45px;
+  left: 800px;
+}
+
+.invites {
+  position: fixed;
+  height: auto;
+  width: 355px;
+  top: 325px;
+  left: 800px;
+}
 
 .topSideMenu {
   font-size: 16px;
