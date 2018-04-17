@@ -20,9 +20,9 @@ position: fixed;
 background-color: #e9ebee;
 height: 100vh;
 width: 100vw;
-
 }
 
+/* TOP SECTION */
 .topBar {
   position: fixed;
   top: 0;
@@ -32,7 +32,6 @@ width: 100vw;
   width: 100vw;
   z-index: 1;
 }
-
 .searchBar {
   position: fixed;
   height: auto;
@@ -41,7 +40,6 @@ width: 100vw;
   left:45px;
   z-index: 2;
 }
-
 .home {
   position: fixed;
   height: auto;
@@ -51,6 +49,7 @@ width: 100vw;
   z-index: 2;
 }
 
+/* LEFT SIDE  */
 .sideBar {
   position: fixed;
   height: auto;
@@ -59,6 +58,7 @@ width: 100vw;
   left: 10px;
 }
 
+/* MIDDLE SECTION */
 .makePost {
   position: absolute;
   height: auto;
@@ -83,18 +83,43 @@ width: 100vw;
   left:235px;
 }
 
-.audreyPost2 {
+.bunz {
   position: absolute;
   height: auto;
-  width: 590px;
-  top: 800px;
-  left:235px;
+  width: 570px;
+  top: 790px;
+  left:250px;
 }
 
+.vice {
+  position: absolute;
+  height: auto;
+  width: 544px;
+  top: 1125px;
+  left:260px;
+}
+
+.charles {
+  position: absolute;
+  height: auto;
+  width: 558px;
+  top: 1665px;
+  left:257px;
+}
+
+.mass {
+  position: absolute;
+  height: auto;
+  width: 570px;
+  top: 2207px;
+  left:240px;
+}
+
+/* RIGHT SIDE */
 .stories {
   position: fixed;
   height: auto;
-  width: 340px;
+  width: 336px;
   top: 45px;
   left: 800px;
 }
@@ -107,7 +132,11 @@ width: 100vw;
   left: 800px;
 }
 
-.topSideMenu {
+
+
+/* THINGS THAT CAN MOST LIKELY BE DESTROYED WITH FLAMES AND ACID */
+
+/* .topSideMenu {
   font-size: 16px;
   font-style: normal;
   font-family: "helvetica";
@@ -186,12 +215,4 @@ width: 100vw;
   top: 10px;
   left: 10px;
 
-}
-/*
-  <div class="sideMenuMore" id="sideMenu">
-    Mind control <br>
-    MK Ultra <br>
-    Illuminiati
-    Illuminated
-    42o VaPe NaTiOn
-  </div> */
+} */
