@@ -9,19 +9,21 @@ Some description of the CSS styling
 */
 
 body {
-width: 100%;
-height: 100%;
-padding: 0;
-margin: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 .facebookBackground {
-position: fixed;
-background-color: #e9ebee;
-height: 100vh;
-width: 100vw;
+  position: fixed;
+  background-color: #e9ebee;
+  height: 100vh;
+  width: 100vw;
 }
 
+
+                                                /* TOP */
 /* TOP SECTION */
 .blueBar {
   position: fixed;
@@ -49,6 +51,9 @@ width: 100vw;
   z-index: 2;
 }
 
+
+
+                                                /* LEFT */
 /* LEFT SIDE  */
 .sideBar {
   position: fixed;
@@ -58,6 +63,9 @@ width: 100vw;
   left: 10px;
 }
 
+
+
+                                                /* MIDDLE */
 /* MIDDLE SECTION */
 .makePost {
   position: relative;
@@ -140,6 +148,9 @@ width: 100vw;
   left:240px;
 }
 
+
+
+                                                /* RIGHT */
 /* RIGHT SIDE */
 .stories {
   position: fixed;
@@ -158,6 +169,7 @@ width: 100vw;
 }
 
 
+                                                /* TESTS */
 /* TEST DIV */
 .newPost {
   position: relative;
@@ -169,10 +181,10 @@ width: 100vw;
   /* 242px; */
   margin-top: 30px;
 }
- .blankDiv {
-   height: auto;
-   width:575px;
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
- }
+.blankDiv {
+  height: auto;
+  width:575px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
