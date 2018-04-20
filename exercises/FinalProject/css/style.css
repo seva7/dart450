@@ -15,7 +15,7 @@ padding: 0;
 margin: 0;
 }
 
-.wall {
+.facebookBackground {
 position: fixed;
 background-color: #e9ebee;
 height: 100vh;
@@ -23,7 +23,7 @@ width: 100vw;
 }
 
 /* TOP SECTION */
-.topBar {
+.blueBar {
   position: fixed;
   top: 0;
   left: 0;
@@ -176,86 +176,3 @@ width: 100vw;
    margin-left: auto;
    margin-right: auto;
  }
-
-/* THINGS THAT CAN MOST LIKELY BE DESTROYED WITH FLAMES AND ACID */
-
-/* .topSideMenu {
-  font-size: 16px;
-  font-style: normal;
-  font-family: "helvetica";
-  position: absolute;
-  top: 8.75vh;
-  left: 9.64vw;
-}
-
-.John {
-  width: 20px;
-  height: auto;
-  position: absolute;
-  top: 8.75vh;
-  left: 7.8vw;
-}
-
-.sideMenu {
-  font-size: 16px;
-  font-style: normal;
-  font-family: "helvetica";
-  position: absolute;
-  top: 16vh;
-  left: 7.8vw;
-  line-height: 40px;
-}
-
-#sideMenuPic {
-  height: 20px;
-  width: auto;
-  margin-right: 10px;
-}
-
-.shortcuts {
-  font-size: 16px;
-  font-style: normal;
-  font-family: "helvetica";
-  color: grey;
-  position: absolute;
-  top: 36vh;
-  left: 7.9vw;
-}
-
-.sideMenuMore {
-  font-size: 16px;
-  font-style: normal;
-  font-family: "helvetica";
-  position: absolute;
-  top: 42vh;
-  left: 7.8vw;
-  line-height: 40px;
-}
-
-.postContainer {
-  background-color: white;
-  position: absolute;
-  top: 8.7vh;
-  left: 21.2vw;
-  width: 500px;
-  height: 400px;
-}
-
-.firstPostTitle {
-  font-size: 16px;
-  font-weight: bold;
-  font-family: "helvetica";
-  color: #4468b0;
-  position: absolute;
-  margin-top: 12px;
-  left: 50px;
-}
-
-#firstPostPic {
-  height: 35px;
-  width: auto;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-
-} */
