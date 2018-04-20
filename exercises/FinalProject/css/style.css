@@ -60,49 +60,60 @@ width: 100vw;
 
 /* MIDDLE SECTION */
 .makePost {
-  position: absolute;
+  position: relative;
   height: auto;
   width: 550px;
-  top: 50px;
-  left:250px;
+  margin-top: 50px;
+  margin-left: 250px;
+  margin-bottom: 7px;
+  /* top: 50px;
+  left:250px; */
 }
 
 .onYourMind {
-  z-index: 10;
   border: none;
   outline: none;
   font-size: 20px;
+  width: 450px;
 }
 
 .testForm {
   position: absolute;
-  z-index: 10;
+  z-index: 0;
   top:115px;
   left: 325px;
 }
 
 .goodMorning {
-  position: absolute;
+  position: relative;
   height: auto;
   width: 550px;
-  top: 230px;
-  left:250px;
+  margin-top: 0px;
+  margin-left: 251px;
+  margin-bottom:7px
+  /* top: 230px;
+  left:250px; */
 }
 
 .audreyPost {
-  position: absolute;
+  position: relative;
   height: auto;
   width: 590px;
-  top: 335px;
-  left:235px;
+  margin-top: 0px;
+  margin-left: 235px;
+  margin-bottom: 7px;
+  /* top: 335px;
+  left:235px; */
 }
 
 .bunz {
-  position: absolute;
+  position: relative;
   height: auto;
   width: 570px;
-  top: 790px;
-  left:250px;
+  margin-top: 0px;
+  margin-left: 235px;
+  /* top: 790px;
+  left:250px; */
 }
 
 .vice {
@@ -147,6 +158,24 @@ width: 100vw;
 }
 
 
+/* TEST DIV */
+.newPost {
+  position: relative;
+  height: auto;
+  width: 575px;
+  top: 0px;
+  /* 2907px; */
+  left:0px;
+  /* 242px; */
+  margin-top: 30px;
+}
+ .blankDiv {
+   height: auto;
+   width:575px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+ }
 
 /* THINGS THAT CAN MOST LIKELY BE DESTROYED WITH FLAMES AND ACID */
 
