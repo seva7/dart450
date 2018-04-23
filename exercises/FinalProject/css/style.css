@@ -29,14 +29,6 @@ body {
 }
 
 
-/* @@font-face {
-  font-family: 'Nawabiat';
-  src: url('fonts/nawabiat.ttf') format('truetype'),
-  url('fonts/nawabiat.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-} */
-
                                                 /* TOP */
 /* TOP SECTION */
 
@@ -115,7 +107,7 @@ body {
   width: 420px;
   margin-left: 35px;
   margin-top: -4px;
-  font-family: "webFont", Times;
+  font-family: "webFont", Helvetica;
 }
 
 .firstInput {
