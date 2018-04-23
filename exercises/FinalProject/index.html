@@ -1,28 +1,31 @@
-<!-- ************************************************************************
 
-DART 450, Winter 2018
-BrutalBook
-Sévan Belleau
+<form INFORMATION ABOUT WEBSITE>
+  <!-- ************************************************************************
 
-Brutalist Websites
-–
-In its ruggedness and lack of concern to look comfortable or easy,
- Brutalism can be seen as a reaction by a younger generation to the lightness,
- optimism,
-and frivolity of today's web design.
-–
-This is the definition given by the website brutalistwebsites.com on what brutalist websites are.
-The way I perceive it is that they remove all fluff and experiment with user interaction.
-Either by making things extremely simple or sometimes by making them incredibly overloaded.
-There is no right or wrong in brutal websites but there is exploration. This is where
-BrutalBook is born, in the middle of a love story between doubt and discovery.
+  DART 450, Winter 2018
+  BrutalBook
+  Sévan Belleau
+
+  Brutalist Websites
+  –
+  In its ruggedness and lack of concern to look comfortable or easy,
+   Brutalism can be seen as a reaction by a younger generation to the lightness,
+   optimism,
+  and frivolity of today's web design.
+  –
+  This is the definition given by the website brutalistwebsites.com on what brutalist websites are.
+  The way I perceive it is that they remove all fluff and experiment with user interaction.
+  Either by making things extremely simple or sometimes by making them incredibly overloaded.
+  There is no right or wrong in brutal websites but there is exploration. This is where
+  BrutalBook is born, in the middle of a love story between doubt and discovery.
 
 
-We all live with social media, or at least the vast majority of us do and while we use it we rarely question how it is fed to us. Because of the constant stream of information, we often forget to think about the container in which this information is being served to us. Why is it this way? If I had to reflect on the social media I use there would be Facebook, Instagram, Tumblr, Youtube and Reddit. All websites that use a lot of squares and rectangles to encapsulate their information and all websites that display information linearly, from top to bottom. Arguably Instagram has been trying things by changing the order of the elements displayed and removed the chronology of elements but most often, newest is highest and most popular is shown again and again.
+  We all live with social media, or at least the vast majority of us do and while we use it we rarely question how it is fed to us. Because of the constant stream of information, we often forget to think about the container in which this information is being served to us. Why is it this way? If I had to reflect on the social media I use there would be Facebook, Instagram, Tumblr, Youtube and Reddit. All websites that use a lot of squares and rectangles to encapsulate their information and all websites that display information linearly, from top to bottom. Arguably Instagram has been trying things by changing the order of the elements displayed and removed the chronology of elements but most often, newest is highest and most popular is shown again and again.
 
-BrutalBook will expose the structure of Facebook. It will abstract the elements shown and allow the user to unlock the ability to modify the frame in which he/she/they exist and interact. By removing pictures, names and any elements that might remind us of the people we know posting and therefore clouding our judgement about the frame/container itself, it will attempt to show how un-natural this method of display is and how one might change it. It is an exploration into play, into brutalism and most importantly into code.
+  BrutalBook will expose the structure of Facebook. It will abstract the elements shown and allow the user to unlock the ability to modify the frame in which he/she/they exist and interact. By removing pictures, names and any elements that might remind us of the people we know posting and therefore clouding our judgement about the frame/container itself, it will attempt to show how un-natural this method of display is and how one might change it. It is an exploration into play, into brutalism and most importantly into code.
 
-************************************************************************ -->
+  ************************************************************************ -->
+</form>
 
 <!DOCTYPE html>
 
@@ -59,13 +62,11 @@ BrutalBook will expose the structure of Facebook. It will abstract the elements 
   <!-- The blue bar needs to be removed/ drawn
   There should be an input field for the searchBar -->
 </form>
-<div class="allTopThings">
-      <div class="top">
-        <div class="blueBar"></div>
-        <div class="facebookBackground"></div>
-        <img src="pics/searchbar.png" class="searchBar">
-        <img src="pics/home.png" class="home">
-      </div>
+<div id="allTopThings">
+<div class="blueBar"></div>
+      <div class="facebookBackground"></div>
+      <img src="pics/searchbar.png" class="searchBar">
+      <img src="pics/home.png" class="home">
     </div>
   </div>
 
@@ -73,7 +74,7 @@ BrutalBook will expose the structure of Facebook. It will abstract the elements 
 <form Left Comments>
 
 </form>
-<div class="allLeftThings">
+<div id="allLeftThings">
   <div class="leftSide">
     <img src="pics/sidebar.png" class="sideBar">
   </div>
@@ -85,12 +86,12 @@ BrutalBook will expose the structure of Facebook. It will abstract the elements 
   All elements must be made relative and not absolute -->
 
 </form>
-<div class="allMiddleThings">
+<div id="allMiddleThings">
 
   <div class="middle">
     <div class="make">
       <img src="pics/MAKEPOST.png" class="makePost">
-      <form class="testForm">
+      <form class="firstInput">
         <input type="text" name="post" class="onYourMind" placeholder="What's on your mind?">
       </form>
     </div>
@@ -99,7 +100,7 @@ BrutalBook will expose the structure of Facebook. It will abstract the elements 
 
     <img src="pics/goodmorning.png" class="goodMorning">
 
-    <!-- Actual posts under this -->
+
     <img src="pics/audreypost.png" class="audreyPost">
     <img src="pics/bunz.png" class="bunz">
     <img src="pics/vice.png" class="vice">
@@ -116,7 +117,7 @@ BrutalBook will expose the structure of Facebook. It will abstract the elements 
   Birthday section could be created to link to Famous birthday website
    -->
 </form>
-<div class="allRightThings">
+<div id="allRightThings">
   <div class="rightSide">
     <img src="pics/stories.png" class="stories">
     <img src="pics/invites.png" class="invites">
