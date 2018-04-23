@@ -16,13 +16,13 @@ body {
 }
 
 @font-face {
-    font-family: 'sf_cartoonist_handregular';
-    src: url('SF_Cartoonist_Hand-webfont.eot');
-    src: url('SF_Cartoonist_Hand-webfont.eot?#iefix') format('embedded-opentype'),
-         url('SF_Cartoonist_Hand-webfont.woff2') format('woff2'),
-         url('SF_Cartoonist_Hand-webfont.woff') format('woff'),
-         url('SF_Cartoonist_Hand-webfont.ttf') format('truetype'),
-         url('SF_Cartoonist_Hand-webfont.svg#sf_cartoonist_handregular') format('svg');
+    font-family: 'webFont';
+    src: url('../fonts/webFont/SF_Cartoonist_Hand-webfont.eot');
+    src: url('../fonts/webFont/SF_Cartoonist_Hand-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/webFont/SF_Cartoonist_Hand-webfont.woff2') format('woff2'),
+         url('../fonts/webFont/SF_Cartoonist_Hand-webfont.woff') format('woff'),
+         url('../fonts/webFont/SF_Cartoonist_Hand-webfont.ttf') format('truetype'),
+         url('../fonts/webFont/SF_Cartoonist_Hand-webfont.svg#sf_cartoonist_handregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -115,7 +115,7 @@ body {
   width: 420px;
   margin-left: 35px;
   margin-top: -4px;
-  font-family: "sf_cartoonist_handregular", Times;
+  font-family: "webFont", Times;
 }
 
 .firstInput {
