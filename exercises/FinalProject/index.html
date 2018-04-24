@@ -47,7 +47,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
   <!-- Include the script file -->
-  <script src="js/script.js"></script>
+
 
 </head>
 
@@ -89,10 +89,11 @@
 <div id="allMiddleThings">
 
   <div class="middle">
-    <div class="make">
+    <div class="make" id="make">
       <img src="pics/MAKEPOST.png" class="makePost">
-      <form class="firstInput">
-        <input type="text" name="post" class="onYourMind" placeholder="What's on your mind?">
+      <form class="firstInput" id="postForm">
+        <input type="text" name="post" class="onYourMind" placeholder="What's on your mind?" id="postInput">
+        <button type="button" id="submitButton" class="submitButton"></button>
       </form>
     </div>
 
@@ -123,14 +124,7 @@
     <img src="pics/invites.png" class="invites">
   </div>
 
-
-
-
-
-<!-- TEST DIV -->
-<div class="blankDiv">
-  <!-- <img src="pics/frame.png" class="newPost"> -->
-</div>
+<script src="js/script.js"></script>
 
 </body>
 
