@@ -19,7 +19,6 @@ body {
     font-family: 'webFont';
     src: url('../fonts/webFont/SF_Cartoonist_Hand-webfont.eot');
     src: url('../fonts/webFont/SF_Cartoonist_Hand-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/webFont/SF_Cartoonist_Hand-webfont.woff2') format('woff2'),
          url('../fonts/webFont/SF_Cartoonist_Hand-webfont.woff') format('woff'),
          url('../fonts/webFont/SF_Cartoonist_Hand-webfont.ttf') format('truetype'),
          url('../fonts/webFont/SF_Cartoonist_Hand-webfont.svg#sf_cartoonist_handregular') format('svg');
@@ -138,7 +137,7 @@ h1 {
   margin-left: 35px;
   margin-top: -4px;
   font-family: "webFont", Helvetica;
-  
+
 }
 
 .firstInput {
@@ -163,53 +162,13 @@ h1 {
   left:250px; */
 }
 
-.audreyPost {
-  position: relative;
-  height: auto;
-  width: 500px;
-  margin-top: 0px;
-  margin-left: 300px;
-  margin-bottom: 10px;
-  /* top: 335px;
-  left:235px; */
-}
-
-.bunz {
-  position: relative;
-  height: auto;
-  width: 500px;
-  margin-left: 300px;
-  margin-bottom: 10px;
-  /* top: 790px;
-  left:250px; */
-}
-
-.vice {
+.drawnPosts {
   position: relative;
   height: auto;
   width: 500px;
   margin-left: 300px;
   margin-bottom: 10px;
 }
-
-.charles {
-  position: relative;
-  height: auto;
-  width: 500px;
-  margin-left: 300px;
-  margin-bottom: 10px;
-}
-
-.mass {
-  position: relative;
-  height: auto;
-  width: 500px;
-  margin-left: 300px;
-  margin-bottom: 10px;
-
-}
-
-
 
                                                 /* RIGHT */
 /* RIGHT SIDE */
@@ -232,6 +191,9 @@ h1 {
 
                                                 /* TESTS */
 /* TEST DIV */
+
+
+
 .newPost {
   position: relative;
   height: auto;
