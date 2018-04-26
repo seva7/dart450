@@ -30,20 +30,25 @@ body {
 
 h1 {
   position: relative;
-  padding-top:50px;
-  padding-bottom: 150px;
+  padding-top:70px;
+  padding-bottom: 100px;
   padding-right: 20px;
+  padding-left: 20px;
   margin-bottom: 10px;
   margin-left: 300px;
+  margin-top: -2px;
   z-index: 0;
-  color: red;
+  /* color: red; */
   font-size: 18px;
-  width: 450px;
+  width: 474;
   height: auto;
   max-width: 500px;
   background: url("../pics/frame.png");
-  background-size: cover;
-  display: inline-block;
+  background-size: 500px 188px;
+  background-repeat: no-repeat;
+  /* display: inline-block; */
+  font-family: "webFont", Helvetica;
+
 
 }
 
@@ -107,6 +112,13 @@ h1 {
   margin-top: 0px;
 }
 
+.make {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
 .makePost {
   position: relative;
   height: auto;
@@ -126,6 +138,7 @@ h1 {
   margin-left: 35px;
   margin-top: -4px;
   font-family: "webFont", Helvetica;
+  
 }
 
 .firstInput {
@@ -136,7 +149,7 @@ h1 {
 }
 
 #submitButton {
-  /* display: none; */
+  display: none;
 }
 
 .goodMorning {
