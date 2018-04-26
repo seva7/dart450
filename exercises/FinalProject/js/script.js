@@ -56,3 +56,16 @@ form.addEventListener("submit", handleForm);
 
 
 })();
+
+$(document).ready(function () {
+  // All our code goes in here!
+
+
+var $newPostPics = $('<img src="pics/frame.png" class="drawnPosts">')
+ $('.make').append($newPostPics);
+
+
+
+
+
+});
