@@ -60,9 +60,53 @@ form.addEventListener("submit", handleForm);
 $(document).ready(function () {
   // All our code goes in here!
 
+// var interval = an amount of time but I want that to change every x amount of time
+// var otherPosts = ["pics/audreypost.png","pics/blank.png","pics/charles.png","pics/mass.png"];
+// var numPosts = 4;
+// var i =Math.floor((Math.random()*10)) % otherPosts.length
+// var testDiv = $('<img class="drawnPosts" id="drawnPosts">');
+// $('.make').append(testDiv);
+// $('#drawnPosts').attr("src", otherPosts[i]);
 
-var $newPostPics = $('<img src="pics/frame.png" class="drawnPosts">')
- $('.make').append($newPostPics);
+
+
+
+// setInterval(function(){
+// var time = Math.random() * 30000;
+// console.log(time);
+// },60000);
+
+var otherPosts = ["pics/audreypost.png","pics/blank.png","pics/charles.png","pics/mass.png"];
+var i =Math.floor((Math.random()*10)) % otherPosts.length;
+var $newPostPics = $('<img class="drawnPosts" id="drawnPosts">');
+
+
+var time = Math.random() * 1000;
+console.log(time);
+setInterval(function(){
+$('.make').append($newPostPics);
+$(this).attr("src", otherPosts[i]);
+var timesAppended = 0;
+timesAppended = timesAppended + 1;
+console.log(timesAppended)
+},time);
+
+
+
+
+
+
+// console.log(amountOfTime)
+
+// var $newPostPics = $('<img src="pics/frame.png" class="drawnPosts">')
+// var interval = 1000;
+// setInterval(function() {
+//    $('.make').append($newPostPics);
+//    var timesAppended = 0;
+//    timesAppended = timesAppended + 1;
+// // console.log(timesAppended)
+// },interval);
+
 
 
 

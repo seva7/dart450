@@ -190,24 +190,3 @@ h1 {
 
 
                                                 /* TESTS */
-/* TEST DIV */
-
-
-
-.newPost {
-  position: relative;
-  height: auto;
-  width: 500px;
-  top: 0px;
-  /* 2907px; */
-  left:0px;
-  /* 242px; */
-  margin-top: 30px;
-}
-.blankDiv {
-  height: auto;
-  width:575px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
