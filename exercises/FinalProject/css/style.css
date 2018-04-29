@@ -4,7 +4,7 @@ DART 450, Winter 2018
 BrutalBook
 Sévan Belleau
 
-Some description of the CSS styling
+The css styling shown here is what keeps all the illustrated elements in their positions and allows the new posts to flow within them.
 
 */
 
@@ -14,7 +14,7 @@ body {
   padding: 0;
   margin: 0;
 }
-
+/* This is a method to use fonts that are not only made for web. It allows for OTF and TTF files to be used but seeing not all browsers accept all types of fonts, I used a free webfont from fontsquirrel.com */
 @font-face {
     font-family: 'webFont';
     src: url('../fonts/webFont/SF_Cartoonist_Hand-webfont.eot');
@@ -29,6 +29,7 @@ body {
 
 h1 {
   position: relative;
+  /* The padding here is to make the entire blank post visible, otherwise it would be cut off in some areas. */
   padding-top:70px;
   padding-bottom: 100px;
   padding-right: 20px;
@@ -136,6 +137,7 @@ h1 {
   width: 420px;
   margin-left: 35px;
   margin-top: -4px;
+  /* The second font, Helvetica is being used as a back up font is all fonts given in my webFont don't work. */
   font-family: "webFont", Helvetica;
 
 }
@@ -190,3 +192,36 @@ h1 {
 
 
                                                 /* TESTS */
+
+.robotA {
+  position: relative;
+  height: auto;
+  width: 500px;
+  margin-left: 300px;
+  margin-bottom: 10px;
+  background-repeat: no-repeat;
+}
+.robotB {
+  position: relative;
+  height: auto;
+  width: 500px;
+  margin-left: 300px;
+  margin-bottom: 10px;
+  background-repeat: no-repeat;
+}
+.robotC {
+  position: relative;
+  height: auto;
+  width: 500px;
+  margin-left: 300px;
+  margin-bottom: 10px;
+  background-repeat: no-repeat;
+}
+.robotD {
+  position: relative;
+  height: auto;
+  width: 500px;
+  margin-left: 300px;
+  margin-bottom: 10px;
+  background-repeat: no-repeat;
+}
